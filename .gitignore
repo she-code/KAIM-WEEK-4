@@ -1,2 +1,8 @@
-data*
+data
 venv
+.env
+__pycache__
+*.pyc
+notebooks/scraping_session.session
+.pytest_cache
+.ipynb_checkpoints
