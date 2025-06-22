@@ -77,6 +77,17 @@ Normalized and tokenized Amharic text, handling language-specific features and r
 Structured raw data by separating message content from metadata such as sender and timestamps
 
 Cleaned and formatted datasets to prepare for entity extraction and downstream modeling
+
+### ✅ Task 2: Label a Subset of Dataset in CoNLL Format
+Manually labeled a subset of tokenized Amharic e-commerce messages using the CoNLL format for NER training
+
+Used a dropdown-based Jupyter interface to assign entity tags like B-Product, I-PRICE, and B-LOC per token
+
+Ensured proper structure by separating each message with a blank line and storing labeled tokens in plain text
+
+Created a high-quality, human-annotated dataset to fine-tune transformer-based Amharic NER models
+
+
 ---
 
 ---
