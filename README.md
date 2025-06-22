@@ -1,20 +1,20 @@
-# 🚗 ACIS Insurance Claims Analysis
+# 📦 Amharic E-commerce Data Extractor for EthioMart
 
-This project performs an end-to-end analysis of car insurance data from **AlphaCare Insurance Solutions (ACIS)**, covering the period from February 2014 to August 2015. The goal is to uncover insights, evaluate risk and pricing fairness, and build predictive models to support dynamic, risk-based pricing.
+## 📌 Project Overview
 
----
-
-## Project Objectives
-
-- Perform **exploratory data analysis (EDA)** to identify trends, anomalies, and key business insights.
-- Set up a **reproducible and auditable data pipeline** using DVC.
-- Conduct **A/B testing** to evaluate risk and margin differences across customer segments.
-- Build and evaluate **predictive models** for:
-  - Claim **severity** (for customers who made claims)
-  - Claim **frequency** (likelihood of a customer making a claim)
+This project aims to transform messy Telegram posts from Ethiopian e-commerce channels into a smart FinTech engine that identifies top vendors suitable for loans. EthioMart wants to centralize fragmented Telegram e-commerce data into one unified platform by extracting structured business entities such as product names, prices, and locations from unstructured Amharic text, images, and documents.
 
 ---
 
+
+## 🔑 Key Objectives
+
+- Develop a repeatable pipeline: data ingestion → preprocessing → labeling → structured data output.
+- Fine-tune transformer-based models (e.g., XLM-Roberta, mBERT) for Amharic Named Entity Recognition (NER) to extract Product, Price, and Location entities with high accuracy (F1-score).
+- Compare multiple NER approaches and interpret model predictions using SHAP and LIME.
+- Deliver actionable recommendations on the best model aligned to EthioMart’s business needs.
+
+---
 
 ## Project Structure
 ---
