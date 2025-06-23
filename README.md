@@ -25,6 +25,8 @@ KAIM-WEEK-3/
 ├── data/
 │ ├── raw/ # Raw data (should never be modified)
 │ └── processed/ # Processed/cleaned data (gitignored)
+├── model # contains models
+│ ├── fine_tuned_amharic_ner_mofel/ #ner model
 ├── notebooks/
 │ ├── task1.ipynb # data scraping, cleaning and processing
 │ └── README.md # Documentation for notebooks
