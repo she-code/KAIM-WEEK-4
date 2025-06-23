@@ -87,8 +87,14 @@ Ensured proper structure by separating each message with a blank line and storin
 
 Created a high-quality, human-annotated dataset to fine-tune transformer-based Amharic NER models
 
+### ✅ Task 3: Fine-Tune Amharic NER Model
+Fine-tuned a transformer model (e.g., AfriBERTa) on the labeled CoNLL-format dataset using Hugging Face tools
 
----
+Aligned token-label pairs for subword tokens and trained with Trainer API
+
+Evaluated performance using precision, recall, and F1 metrics via seqeval
+
+Saved the best model and tokenizer for downstream NER tasks on Amharic Telegram data
 
 ---
 ## Setup Instructions
