@@ -6,3 +6,4 @@ __pycache__
 notebooks/scraping_session.session
 .pytest_cache
 .ipynb_checkpoints
+model

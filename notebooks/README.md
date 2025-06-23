@@ -20,7 +20,6 @@ This folder contains Jupyter notebooks illustrating the process of data ingestio
 - Highlighting linguistic features and data quality issues to prepare for NER labeling and modeling
 
 ### task2.py
-# task_2_ner_labeling_conll.py
 
 - Loaded a preprocessed and tokenized subset of messages for manual labeling
 
@@ -37,4 +36,26 @@ This folder contains Jupyter notebooks illustrating the process of data ingestio
 - Prepared the dataset for supervised fine-tuning of Amharic NER models using Hugging Face tools
 
 - Enabled reproducibility and consistency by structuring labels in a widely accepted standard (CoNLL)
+
+## task3.py
+
+- Loaded CoNLL-formatted Amharic dataset for training and validation
+
+- Parsed token-label sequences and converted them into Hugging Face datasets format with proper alignment
+
+- Tokenized input text using a pretrained Amharic transformer tokenizer (e.g., AfriBERTa, XLM-R)
+
+- Applied label alignment to ensure correct mapping of entity tags to subword tokens
+
+- Fine-tuned a transformer-based model using Hugging Face's Trainer API with sequence labeling objectives
+
+- Monitored training with validation loss, precision, recall, and F1 score using seqeval metrics
+
+- Evaluated the final model on held-out test data and generated classification reports per entity type
+
+- Saved the best-performing model checkpoint and tokenizer for downstream inference
+
+- Enabled reproducibility through fixed seeds, logged training arguments, and saved evaluation metrics
+
+- Prepared the model for real-world Telegram NER use cases such as product name, price, and location extraction
 
