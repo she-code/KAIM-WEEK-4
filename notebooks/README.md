@@ -2,7 +2,7 @@
 
 This folder contains Jupyter notebooks illustrating the process of data ingestion, cleaning, and initial exploration of Telegram e-commerce data.
 
-### task1.py
+### task1.ipynb
 - Connecting to and scraping messages, images, and documents from multiple Ethiopian Telegram channels
 
 - Normalizing Amharic text and handling language-specific punctuation and emojis
@@ -19,7 +19,7 @@ This folder contains Jupyter notebooks illustrating the process of data ingestio
 
 - Highlighting linguistic features and data quality issues to prepare for NER labeling and modeling
 
-### task2.py
+### task2.ipynb
 
 - Loaded a preprocessed and tokenized subset of messages for manual labeling
 
@@ -37,7 +37,7 @@ This folder contains Jupyter notebooks illustrating the process of data ingestio
 
 - Enabled reproducibility and consistency by structuring labels in a widely accepted standard (CoNLL)
 
-## task3.py
+## task3.ipynb
 
 - Loaded CoNLL-formatted Amharic dataset for training and validation
 
@@ -59,3 +59,32 @@ This folder contains Jupyter notebooks illustrating the process of data ingestio
 
 - Prepared the model for real-world Telegram NER use cases such as product name, price, and location extraction
 
+## convert_to_conll.ipynb
+
+- converts the txt file to .conll file
+
+## task4_model_comparison.ipynb
+
+- Implemented a full model comparison workflow for Amharic Named Entity Recognition using multiple multilingual transformer models
+
+- Parsed CoNLL-formatted datasets containing token–label sequences and structured them into Hugging Face Dataset format
+
+- Fine-tuned and evaluated three transformer models:
+
+    - xlm-roberta-base
+
+    - bert-base-multilingual-cased (mBERT)
+
+    - Davlan/distilbert-base-multilingual-cased-ner-hrl
+
+- Tokenized the Amharic text and aligned NER labels properly across subword tokens for each model
+
+- Used Hugging Face's Trainer API with consistent training arguments across all models (e.g., batch size, epochs, weight decay)
+
+- Evaluated all models on a validation split using the seqeval metric to compute precision, recall, and F1 score
+
+- Logged training time and validation performance for each model to enable reproducible benchmarking
+
+- Identified the best-performing model based on F1 score and evaluation loss for downstream deployment
+
+- Saved the tokenizer and model checkpoint of the top performer for real-world usage in Amharic Telegram e-commerce entity      extraction
