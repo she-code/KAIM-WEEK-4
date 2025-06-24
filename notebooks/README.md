@@ -100,3 +100,7 @@ This folder contains Jupyter notebooks illustrating the process of data ingestio
 - Tested models on sample Amharic sentences, revealing poor accuracy and common misclassification patterns (e.g., overuse of I-CONTACT)
 
 - Identified core issues in model learning, such as weak token-feature relationships and data complexity
+
+## ner_data_from_message.ipynb
+
+- Extracts prodct details from message
