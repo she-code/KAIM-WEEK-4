@@ -88,3 +88,15 @@ This folder contains Jupyter notebooks illustrating the process of data ingestio
 - Identified the best-performing model based on F1 score and evaluation loss for downstream deployment
 
 - Saved the tokenizer and model checkpoint of the top performer for real-world usage in Amharic Telegram e-commerce entity      extraction
+
+## task5.ipynb
+
+- Loaded saved pretrained model 
+
+- Implemented SHAP and LIME interpretability tools to explain model predictions
+
+- Visualized predicted entities with color coding and performed error analysis against ground truth
+
+- Tested models on sample Amharic sentences, revealing poor accuracy and common misclassification patterns (e.g., overuse of I-CONTACT)
+
+- Identified core issues in model learning, such as weak token-feature relationships and data complexity
