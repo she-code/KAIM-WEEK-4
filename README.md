@@ -98,6 +98,18 @@ Evaluated performance using precision, recall, and F1 metrics via seqeval
 
 Saved the best model and tokenizer for downstream NER tasks on Amharic Telegram data
 
+### ✅ Task 4: Compare & Select Best NER Model
+Converted .txt file to .conll file
+
+Compared multiple multilingual transformer models (XLM-R, DistilBERT, mBERT) for Amharic NER using the same labeled dataset
+
+Aligned tokens and labels, fine-tuned each model with consistent settings using Hugging Face’s Trainer API
+
+Evaluated performance using seqeval metrics (F1, precision, recall, accuracy)
+
+Selected xlm-roberta-base as the best model based on F1 score and saved its configuration for production use
+
+
 ---
 ## Setup Instructions
 

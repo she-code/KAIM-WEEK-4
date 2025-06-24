@@ -62,3 +62,29 @@ This folder contains Jupyter notebooks illustrating the process of data ingestio
 ## convert_to_conll.ipynb
 
 - converts the txt file to .conll file
+
+## task4_model_comparison.ipynb
+
+- Implemented a full model comparison workflow for Amharic Named Entity Recognition using multiple multilingual transformer models
+
+- Parsed CoNLL-formatted datasets containing token–label sequences and structured them into Hugging Face Dataset format
+
+- Fine-tuned and evaluated three transformer models:
+
+    - xlm-roberta-base
+
+    - bert-base-multilingual-cased (mBERT)
+
+    - Davlan/distilbert-base-multilingual-cased-ner-hrl
+
+- Tokenized the Amharic text and aligned NER labels properly across subword tokens for each model
+
+- Used Hugging Face's Trainer API with consistent training arguments across all models (e.g., batch size, epochs, weight decay)
+
+- Evaluated all models on a validation split using the seqeval metric to compute precision, recall, and F1 score
+
+- Logged training time and validation performance for each model to enable reproducible benchmarking
+
+- Identified the best-performing model based on F1 score and evaluation loss for downstream deployment
+
+- Saved the tokenizer and model checkpoint of the top performer for real-world usage in Amharic Telegram e-commerce entity      extraction
