@@ -29,6 +29,11 @@ KAIM-WEEK-3/
 │ ├── fine_tuned_amharic_ner_mofel/ #ner model
 ├── notebooks/
 │ ├── task1.ipynb # data scraping, cleaning and processing
+│ ├── task2.ipynb # conll data extracted
+│ ├── task3.ipynb # fine tune ner model
+│ ├── task4_model_comparison.ipynb model comparison
+│ ├── task5.ipynb # model interpretability
+│ ├── task6.ipynb # vendor scorecard
 │ └── README.md # Documentation for notebooks
 ├── scripts/
 │ └── README.md # Documentation for scripts
