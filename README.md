@@ -109,6 +109,18 @@ Evaluated performance using seqeval metrics (F1, precision, recall, accuracy)
 
 Selected xlm-roberta-base as the best model based on F1 score and saved its configuration for production use
 
+### ✅ Task 5:  Model Interpretability
+
+Loaded saved pretrained model 
+
+Implemented SHAP and LIME interpretability tools to explain model predictions
+
+Visualized predicted entities with color coding and performed error analysis against ground truth
+
+Tested models on sample Amharic sentences, revealing poor accuracy and common misclassification patterns (e.g., overuse of I-CONTACT)
+
+Identified core issues in model learning, such as weak token-feature relationships and data complexity
+
 
 ---
 ## Setup Instructions
