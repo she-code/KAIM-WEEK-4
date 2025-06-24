@@ -100,3 +100,23 @@ This folder contains Jupyter notebooks illustrating the process of data ingestio
 - Tested models on sample Amharic sentences, revealing poor accuracy and common misclassification patterns (e.g., overuse of I-CONTACT)
 
 - Identified core issues in model learning, such as weak token-feature relationships and data complexity
+
+## ner_data_from_message.ipynb
+
+- Extracts prodct details from message
+
+## task6.ipynb
+
+- Loaded Telegram metadata and NER-extracted product data
+
+- Merged metadata with NER output to create a full vendor dataset
+
+- Calculated key metrics per vendor: Posts/Week, Avg. Views/Post, Avg. Price
+
+- Identified top-performing post per vendor based on views and price
+
+- Designed and applied a custom Lending Score formula
+
+- Generated a comparative Vendor Scorecard table
+
+- Recommended micro-loan amounts based on vendor performance and price levels

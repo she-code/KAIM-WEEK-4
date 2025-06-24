@@ -121,6 +121,23 @@ Tested models on sample Amharic sentences, revealing poor accuracy and common mi
 
 Identified core issues in model learning, such as weak token-feature relationships and data complexity
 
+✅ Task 6: Vendor Scorecard for Micro-Lending
+
+Created NER dataset by extracting product-related entities (product_category, price, location, contact_info) from the messages column
+
+Loaded Telegram metadata and NER-extracted product data
+
+Merged metadata with extracted entities to build a vendor-level dataset
+
+Calculated vendor metrics: posting frequency, average views per post, and average product price
+
+Identified each vendor's top-performing post based on views and price
+
+Designed a custom Lending Score to rank vendors by business activity and engagement
+
+Generated a Vendor Scorecard comparing all vendors across key metrics
+
+Recommended micro-loan amounts based on vendor score and pricing strategy
 
 ---
 ## Setup Instructions
